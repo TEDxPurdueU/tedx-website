@@ -398,7 +398,7 @@
 		   longer hold the copy; letting it outgrow the ratio beats clipping. */
 		min-height: min-content;
 		background: var(--red-accessible);
-		color: #fff;
+		color: var(--bg);
 		/* The tile is a quarter of the collage, so on a phone it is only ~130px
 		   across — desktop's fixed padding and gap would clip the date out. */
 		padding: clamp(13px, 4vw, 22px);
@@ -412,7 +412,7 @@
 
 	.next-card:hover {
 		background: var(--text);
-		color: #fff;
+		color: var(--bg);
 	}
 
 	.next-card__label {
@@ -458,9 +458,9 @@
 	/* Shared label for the two paired sections — "Who we are" / "What we do". */
 	.section-label {
 		font-size: 13px;
-		/* h2 supplies the document structure; this keeps the former plain-label
-		   weight so the visual hierarchy does not change. */
-		font-weight: 400;
+		/* h2 supplies the document structure. Bold because the label is red at
+		   13px, and small red text is kept bold for legibility. */
+		font-weight: 700;
 		letter-spacing: 0.22em;
 		text-transform: uppercase;
 		color: var(--red-accessible);
@@ -825,7 +825,7 @@
 	.pager__page[aria-current='page'] {
 		background: var(--red-accessible);
 		border-color: var(--red-accessible);
-		color: #fff;
+		color: var(--bg);
 	}
 
 	.pager__step:disabled {

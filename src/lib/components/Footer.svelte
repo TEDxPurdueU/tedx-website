@@ -130,8 +130,13 @@
 		transition: color 0.15s ease;
 	}
 
+	/* Ink plus a red underline: 15px regular is too small for red text. */
 	.page-links a:hover {
-		color: var(--red-accessible);
+		color: var(--text);
+		text-decoration: underline;
+		text-decoration-color: var(--red);
+		text-decoration-thickness: 2px;
+		text-underline-offset: 4px;
 	}
 
 	.colophon {

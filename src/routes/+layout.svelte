@@ -43,7 +43,7 @@
 		z-index: 200;
 		padding: 12px 16px;
 		background: var(--text);
-		color: #fff;
+		color: var(--bg);
 		font-weight: 700;
 		transform: translateY(-200%);
 		transition: transform 0.15s ease;

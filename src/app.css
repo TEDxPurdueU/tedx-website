@@ -1,28 +1,30 @@
 /*
  * TEDxPurdueU — global styles.
  *
- * Palette and type are lifted straight from the approved design:
- * warm off-white canvas, near-black ink, TEDx logo red for every accent,
- * Helvetica throughout.
+ * Palette follows the TEDx brand guide: white canvas, black ink, TED Red
+ * (#eb0028) for every accent, Helvetica throughout. The greys below are
+ * supporting neutrals, not brand colours.
  */
 
 :root {
-	--bg: #faf9f8;
-	/* The bright TEDx red stays available for decorative rules, icons, and
-	   focus indicators (3.57:1 against the canvas, exceeding the 3:1 UI
-	   requirement). Text and filled controls use the darker companion below:
-	   #c82100 is 5.44:1 against the canvas and white is 5.72:1 on it. */
-	--red: #ff2b06;
-	--red-accessible: #c82100;
-	--text: #14100f;
+	--bg: #ffffff;
+	/* TED Red is the only red. It is 4.6:1 against the white canvas, and white
+	   on it is the same 4.6:1, so it clears 4.5:1 for filled controls and the
+	   3:1 UI-component floor for rules, icons and focus rings. Red text is still
+	   kept bold or 18px+; small regular-weight text stays in --text and
+	   carries red only as an underline or marker. --red-accessible is kept as
+	   an alias so existing references keep working. */
+	--red: #eb0028;
+	--red-accessible: #eb0028;
+	--text: #000000;
 	--text-muted: #443e3a;
 	--text-dim: #5f5852;
 	/* Supporting text steps down in a consistent visual order while remaining at
-	   or above 4.5:1 on the canvas. The darker --text-on-fill is reserved for
-	   captions over the tinted placeholder fill. */
-	--text-faint: #756e67; /* 4.78:1 */
-	--text-fainter: #766f68; /* 4.71:1 */
-	--text-faintest: #786f68; /* 4.67:1 */
+	   or above 4.5:1 on the white canvas. The darker --text-on-fill is reserved
+	   for captions over the tinted placeholder fill. */
+	--text-faint: #756e67; /* 5.02:1 */
+	--text-fainter: #766f68; /* 4.95:1 */
+	--text-faintest: #786f68; /* 4.92:1 */
 	--text-on-fill: #6f6861; /* 4.71:1 on --fill */
 	--rule: #e4dfd9;
 	--border: #d9d3cc;
@@ -50,18 +52,16 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+/* Links default to ink. Every link on the site styles itself; red reaches
+   small link text only as an underline or marker (see .link-rule, .nav-link). */
 a {
-	color: var(--red-accessible);
-	text-decoration: none;
-}
-
-a:hover {
 	color: var(--text);
+	text-decoration: none;
 }
 
 ::selection {
 	background: var(--red-accessible);
-	color: #fff;
+	color: var(--bg);
 }
 
 :focus-visible {
@@ -153,12 +153,12 @@ p {
 
 .btn--primary {
 	background: var(--red-accessible);
-	color: #fff;
+	color: var(--bg);
 }
 
 .btn--primary:hover {
 	background: var(--text);
-	color: #fff;
+	color: var(--bg);
 }
 
 .btn--outline {
