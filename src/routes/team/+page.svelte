@@ -117,8 +117,10 @@
 		font-weight: 700;
 	}
 
+	/* Bold because red text under 18px is kept bold for legibility. */
 	.member-role {
 		font-size: 14px;
+		font-weight: 700;
 		color: var(--red-accessible);
 		letter-spacing: 0.06em;
 	}

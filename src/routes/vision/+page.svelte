@@ -135,8 +135,8 @@
 
 <style>
 	.vision {
-		--v-bg: #faf9f8;
-		--v-text: #14100f;
+		--v-bg: var(--bg);
+		--v-text: var(--text);
 		--v-muted: #443e3a;
 		--v-faint: #756e67;
 		--v-rule: #e4dfd9;
@@ -156,8 +156,9 @@
 	@media (prefers-color-scheme: dark) {
 		.vision {
 			color-scheme: dark;
-			--v-bg: #0b0a0a;
-			--v-text: #faf9f8;
+			/* Inverted for dark mode: brand black canvas, brand white ink. */
+			--v-bg: var(--text);
+			--v-text: var(--bg);
 			--v-muted: #d9d3cc;
 			--v-faint: #a39b94;
 			--v-rule: #2e2b29;

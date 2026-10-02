@@ -217,7 +217,7 @@
 		justify-content: space-between;
 		gap: 32px;
 		padding: 20px var(--gutter);
-		background: rgba(250, 249, 248, 0.94);
+		background: color-mix(in srgb, var(--bg) 94%, transparent);
 		backdrop-filter: blur(10px);
 		-webkit-backdrop-filter: blur(10px);
 		border-bottom: 1px solid var(--rule);
@@ -249,9 +249,15 @@
 		transition: color 0.15s ease;
 	}
 
+	/* 13px regular is too small to carry red text, so the state goes to ink
+	   and the red moves to an underline. */
 	.nav-link:hover,
 	.nav-link.active {
-		color: var(--red-accessible);
+		color: var(--text);
+		text-decoration: underline;
+		text-decoration-color: var(--red);
+		text-decoration-thickness: 2px;
+		text-underline-offset: 6px;
 	}
 
 	/* The right-hand group. Holding the social set and the toggle together
@@ -301,7 +307,7 @@
 		flex-shrink: 0;
 		padding: 12px 18px;
 		background: var(--red-accessible);
-		color: #fff;
+		color: var(--bg);
 		font-size: 12px;
 		font-weight: 700;
 		letter-spacing: 0.1em;
@@ -312,7 +318,7 @@
 
 	.join:hover {
 		background: var(--text);
-		color: #fff;
+		color: var(--bg);
 	}
 
 	/* Hairline square, same control language as the lightbox buttons. */
