@@ -15,6 +15,7 @@ export const indexablePages = [
 	{ path: '/speakers', changeFrequency: 'monthly', priority: '0.8' },
 	{ path: '/salons', changeFrequency: 'weekly', priority: '0.7' },
 	{ path: '/team', changeFrequency: 'monthly', priority: '0.6' },
+	{ path: '/sponsors', changeFrequency: 'monthly', priority: '0.6' },
 	{ path: '/vision', changeFrequency: 'yearly', priority: '0.5' }
 ];
 
