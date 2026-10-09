@@ -5,18 +5,16 @@
  * one — those tiles render the name as a wordmark instead, so a missing logo
  * never leaves a blank slot. `url` is optional; tiles without one are not links.
  *
- * @type {{ name: string, detail: string, url: string | null, logo: string | null }[]}
+ * @type {{ name: string, url: string | null, logo: string | null }[]}
  */
 export const sponsors = [
 	{
 		name: 'SFAB',
-		detail: 'Student Fee Advisory Board, Purdue University',
 		url: 'https://www.purdue.edu/sao/fundraising/soga-sfab.php',
 		logo: '/sponsors/sfab.webp'
 	},
 	{
 		name: 'Department of Computer Science',
-		detail: 'Purdue University',
 		url: 'https://www.cs.purdue.edu',
 		logo: '/sponsors/purdue-cs.webp'
 	}

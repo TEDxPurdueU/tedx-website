@@ -60,12 +60,11 @@
 								<span class="wordmark">{sponsor.name}</span>
 							{/if}
 						</div>
-						<div class="caption">
-							{#if sponsor.logo}
+						{#if sponsor.logo}
+							<div class="caption">
 								<span class="name">{sponsor.name}</span>
-							{/if}
-							<span class="detail">{sponsor.detail}</span>
-						</div>
+							</div>
+						{/if}
 					</svelte:element>
 				</li>
 			{/each}
@@ -163,9 +162,6 @@
 	}
 
 	.caption {
-		display: flex;
-		flex-direction: column;
-		gap: 4px;
 		padding: 16px 20px;
 		border-top: 1px solid var(--border);
 	}
@@ -173,11 +169,6 @@
 	.name {
 		font-size: 17px;
 		font-weight: 700;
-	}
-
-	.detail {
-		font-size: 14px;
-		color: var(--text-dim);
 	}
 
 	.join {
