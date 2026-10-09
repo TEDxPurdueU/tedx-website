@@ -8,7 +8,8 @@ export const pages = [
 	{ href: '/2027-event', label: 'Unseen 2027', footerLabel: 'Unseen 2027' },
 	{ href: '/salons', label: 'Salons', footerLabel: 'Salons' },
 	{ href: '/speakers', label: 'Student Speaker', footerLabel: 'Student Speaker Competition' },
-	{ href: '/team', label: 'Team', footerLabel: 'Team' }
+	{ href: '/team', label: 'Team', footerLabel: 'Team' },
+	{ href: '/sponsors', label: 'Sponsors', footerLabel: 'Sponsors' }
 ];
 
 /**
