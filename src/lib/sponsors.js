@@ -18,6 +18,6 @@ export const sponsors = [
 		name: 'Department of Computer Science',
 		detail: 'Purdue University',
 		url: 'https://www.cs.purdue.edu',
-		logo: '/sponsors/purdue-cs.svg'
+		logo: '/sponsors/purdue-cs.webp'
 	}
 ];

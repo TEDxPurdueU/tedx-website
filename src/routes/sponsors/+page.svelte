@@ -150,7 +150,7 @@
 	   size without either one dictating the other's scale. */
 	.mark img {
 		width: 100%;
-		height: 120px;
+		height: 150px;
 		object-fit: contain;
 	}
 
