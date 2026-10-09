@@ -30,7 +30,7 @@
 	<div class="wrap">
 		<div class="eyebrow">Redirecting</div>
 		<h1 class="page-title">{heading}</h1>
-		<p class="lede">If nothing happens in a moment, open the form directly.</p>
+		<p class="lede">If nothing happens in a moment, open the {what} directly.</p>
 		<a class="btn btn--primary" href={url}>Open the {what}</a>
 	</div>
 </section>
