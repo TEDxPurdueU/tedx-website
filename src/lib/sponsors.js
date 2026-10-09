@@ -12,12 +12,12 @@ export const sponsors = [
 		name: 'SFAB',
 		detail: 'Student Fee Advisory Board, Purdue University',
 		url: 'https://www.purdue.edu/sao/fundraising/soga-sfab.php',
-		logo: null
+		logo: '/sponsors/sfab.webp'
 	},
 	{
 		name: 'Department of Computer Science',
 		detail: 'Purdue University',
 		url: 'https://www.cs.purdue.edu',
-		logo: null
+		logo: '/sponsors/purdue-cs.svg'
 	}
 ];

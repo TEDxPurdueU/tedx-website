@@ -54,7 +54,8 @@
 					>
 						<div class="mark">
 							{#if sponsor.logo}
-								<img src={sponsor.logo} alt={sponsor.name} />
+								<!-- The name is printed in the caption, so the mark itself is decorative. -->
+								<img src={sponsor.logo} alt="" />
 							{:else}
 								<span class="wordmark">{sponsor.name}</span>
 							{/if}
@@ -145,9 +146,11 @@
 		text-align: center;
 	}
 
+	/* A fixed box with object-fit lets square and wide marks share one tile
+	   size without either one dictating the other's scale. */
 	.mark img {
-		max-width: 100%;
-		max-height: 100%;
+		width: 100%;
+		height: 120px;
 		object-fit: contain;
 	}
 
